@@ -1,0 +1,11 @@
+{
+	"id": "sample-plugin",
+	"name": "Nmaper",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Import nmap files to create canvas",
+	"author": "Yassine Damiri",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": true
+}
