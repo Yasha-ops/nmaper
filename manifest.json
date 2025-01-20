@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
+	"id": "nmaper",
 	"name": "Nmaper",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "Import nmap files to create canvas",
+	"version": "0.2.0",
+	"minAppVersion": "0.1.0",
+	"description": "Import nmap report files to generate Markdown pages and Canvas graphs",
 	"author": "Yassine Damiri",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"authorUrl": "https://damiri.fr",
+	"fundingUrl": "https://damiri.fr/contact",
 	"isDesktopOnly": true
 }

@@ -6,3 +6,32 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+/* Hide the default file input */
+.file-input-hidden {
+	display: none;
+}
+
+/* Style the label to look like a button */
+.file-input-label {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border: none;
+	border-radius: var(--radius-s);
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+/* Style for the text displaying the selected file name */
+.file-name-display {
+	margin-left: 10px;
+	font-size: 14px;
+	color: var(--text-muted);
+}
+
+.setting-item-info-div {
+	flex: auto;
+	flex-direction: column;
+	display: flex;
+}
