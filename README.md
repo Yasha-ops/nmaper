@@ -2,6 +2,8 @@
 
 This plugin integrates Nmap network scanning functionality into Obsidian. It allows users to import Nmap XML scan reports and visualize the results in a structured Markdown format, with the option to manage and visualize them in a network canvas.
 
+![output-onlinegiftools](https://github.com/user-attachments/assets/85d7db6d-6cec-420f-87d8-5cdd788cb847)
+
 ## Features
 
 ### Ribbon Icon
