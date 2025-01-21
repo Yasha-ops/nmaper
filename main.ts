@@ -16,17 +16,17 @@ const xml2js = require("xml2js"); // Use xml2js to parse XML
 
 // Remember to rename these classes and interfaces!
 
-interface MyPluginSettings {
+interface NmapSettings {
 	mySetting: string;
 }
 
-const DEFAULT_SETTINGS: MyPluginSettings = {
+const DEFAULT_SETTINGS: NmapSettings = {
 	mySetting: "default",
 };
 
 // Main Plugin
-export default class MyPlugin extends Plugin {
-	settings: MyPluginSettings;
+export default class Nmap extends Plugin {
+	settings: NmapSettings;
 
 	async onload() {
 		await this.loadSettings();
@@ -38,7 +38,7 @@ export default class MyPlugin extends Plugin {
 			"Nmaper",
 			(evt: MouseEvent) => {
 				// Called when the user clicks the icon.
-				new SampleModal(this.app).open();
+				new NmapModal(this.app).open();
 			}
 		);
 		// Perform additional things with the ribbon
@@ -55,14 +55,12 @@ export default class MyPlugin extends Plugin {
 			id: "nmaper",
 			name: "Import Nmap XML scan report",
 			callback: () => {
-				new SampleModal(this.app).open();
+				new NmapModal(this.app).open();
 			},
 		});
 
 		// ############################################## Settings Tabs ######################################################""
 		// This adds a settings tab so the user can configure various aspects of the plugin
-		//this.addSettingTab(new SampleSettingTab(this.app, this));
-
 		// If the plugin hooks up any global DOM events (on parts of the app that doesn't belong to this plugin)
 		// Using this function will automatically remove the event listener when this plugin is disabled.
 		//this.registerDomEvent(document, "click", (evt: MouseEvent) => {
@@ -91,7 +89,7 @@ export default class MyPlugin extends Plugin {
 }
 
 // Modal
-class SampleModal extends Modal {
+class NmapModal extends Modal {
 	private xmlFileContent: any;
 	private outputDirectory: any;
 
@@ -333,10 +331,10 @@ class SampleModal extends Modal {
 }
 
 // Setting tab
-class SampleSettingTab extends PluginSettingTab {
-	plugin: MyPlugin;
+class NmapSettingsTab extends PluginSettingTab {
+	plugin: Nmap;
 
-	constructor(app: App, plugin: MyPlugin) {
+	constructor(app: App, plugin: Nmap) {
 		super(app, plugin);
 		this.plugin = plugin;
 	}

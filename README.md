@@ -1,4 +1,4 @@
-# Nmaper
+# Nmap
 
 This plugin integrates Nmap network scanning functionality into Obsidian. It allows users to import Nmap XML scan reports and visualize the results in a structured Markdown format, with the option to manage and visualize them in a network canvas.
 
@@ -8,12 +8,12 @@ This plugin integrates Nmap network scanning functionality into Obsidian. It all
 
 ### Ribbon Icon
 
--   Adds a **Nmaper** icon in the left ribbon for quick access to the plugin.
+-   Adds a **Nmap** icon in the left ribbon for quick access to the plugin.
 -   Click the icon to open the XML parser interface.
 
 ### Status Bar
 
--   Displays the plugin status (`Nmaper ready`) in the bottom bar of the application.
+-   Displays the plugin status (`Nmap ready`) in the bottom bar of the application.
 
 ### Commands
 
